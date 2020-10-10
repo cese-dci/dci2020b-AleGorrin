@@ -1252,4 +1252,6 @@ Wire Notes Line
 	5175 475  5175 5875
 Wire Notes Line
 	3300 5325 3300 7125
+NoConn ~ 7575 2950
+NoConn ~ 7475 2950
 $EndSCHEMATC
