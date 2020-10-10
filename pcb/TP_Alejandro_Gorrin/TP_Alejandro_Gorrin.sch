@@ -288,25 +288,10 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 1900 6450 
 	1    2050 6500
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:LED CHG
-U 1 1 5F80BE22
-P 1150 5750
-F 0 "CHG" H 1150 5550 50  0000 C CNN
-F 1 "ORANGE" H 1200 5650 50  0000 C CNN
-F 2 "" H 1150 5750 50  0001 C CNN
-F 3 "~" H 1150 5750 50  0001 C CNN
-	1    1150 5750
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2150 5750 1750 5750
 Wire Wire Line
 	1450 5750 1300 5750
-Wire Wire Line
-	1000 5750 900  5750
-Wire Wire Line
-	900  5750 900  5600
 Wire Wire Line
 	2150 6900 2150 7000
 Wire Wire Line
@@ -333,9 +318,6 @@ Wire Wire Line
 Wire Wire Line
 	1950 5950 1950 6100
 Wire Wire Line
-	900  6500 900  5750
-Connection ~ 900  5750
-Wire Wire Line
 	2175 1725 2175 1875
 Wire Wire Line
 	1875 1425 1875 1775
@@ -344,27 +326,13 @@ Wire Wire Line
 Wire Wire Line
 	1625 1775 1625 1675
 Wire Wire Line
-	1875 1325 1625 1325
-Wire Wire Line
 	1625 1375 1625 1325
 Wire Wire Line
 	1375 1425 1375 1325
 Wire Wire Line
 	1375 1725 1375 1875
 Wire Wire Line
-	725  1475 725  1325
-Wire Wire Line
 	1375 825  1375 725 
-Wire Wire Line
-	1075 1025 725  1025
-Connection ~ 725  1025
-Wire Wire Line
-	725  1025 725  725 
-Wire Wire Line
-	825  1325 725  1325
-Connection ~ 725  1325
-Wire Wire Line
-	725  1325 725  1025
 Wire Wire Line
 	725  1775 725  1875
 Wire Wire Line
@@ -919,7 +887,6 @@ Wire Wire Line
 	2625 1325 2975 1325
 Wire Wire Line
 	1125 1325 1375 1325
-Connection ~ 1625 1325
 Connection ~ 1375 1325
 Wire Wire Line
 	1375 1325 1625 1325
@@ -1257,4 +1224,39 @@ NoConn ~ 6225 2550
 NoConn ~ 5625 2950
 NoConn ~ 5225 2150
 NoConn ~ 5225 2350
+$Comp
+L Device:LED D1
+U 1 1 5F85EF33
+P 1150 5750
+F 0 "D1" H 1143 5495 50  0000 C CNN
+F 1 "LED" H 1143 5586 50  0000 C CNN
+F 2 "" H 1150 5750 50  0001 C CNN
+F 3 "~" H 1150 5750 50  0001 C CNN
+	1    1150 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1875 1325 1625 1325
+Connection ~ 1625 1325
+NoConn ~ 2125 4850
+NoConn ~ 6250 4600
+Wire Wire Line
+	900  6500 900  5750
+Wire Wire Line
+	1000 5750 900  5750
+Connection ~ 900  5750
+Wire Wire Line
+	900  5750 900  5600
+Wire Wire Line
+	725  725  725  1025
+Wire Wire Line
+	825  1325 725  1325
+Connection ~ 725  1325
+Wire Wire Line
+	725  1325 725  1475
+Wire Wire Line
+	1075 1025 725  1025
+Connection ~ 725  1025
+Wire Wire Line
+	725  1025 725  1325
 $EndSCHEMATC
