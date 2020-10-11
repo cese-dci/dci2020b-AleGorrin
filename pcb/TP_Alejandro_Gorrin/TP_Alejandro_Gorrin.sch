@@ -201,17 +201,6 @@ F 3 "https://www.silabs.com/documents/public/data-sheets/cp2104.pdf" H 6925 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power_Protection:TPD4S014 U2
-U 1 1 5F823F62
-P 5725 2450
-F 0 "U2" H 5725 3017 50  0000 C CNN
-F 1 "TPD4S014" H 5725 2926 50  0000 C CNN
-F 2 "Package_SON:Texas_S-PWSON-N10" H 6625 1950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tpd4s014.pdf" H 6825 1750 50  0001 C CNN
-	1    5725 2450
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:R R3
 U 1 1 5F82BD50
 P 4225 2850
@@ -497,42 +486,25 @@ Wire Wire Line
 $Comp
 L power:GNDD #PWR0112
 U 1 1 5F8A1CC4
-P 5725 3050
-F 0 "#PWR0112" H 5725 2800 50  0001 C CNN
-F 1 "GNDD" H 5729 2895 50  0000 C CNN
-F 2 "" H 5725 3050 50  0001 C CNN
-F 3 "" H 5725 3050 50  0001 C CNN
-	1    5725 3050
+P 5850 3000
+F 0 "#PWR0112" H 5850 2750 50  0001 C CNN
+F 1 "GNDD" H 5854 2845 50  0000 C CNN
+F 2 "" H 5850 3000 50  0001 C CNN
+F 3 "" H 5850 3000 50  0001 C CNN
+	1    5850 3000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5725 2950 5725 3050
 Wire Wire Line
 	5925 1200 6525 1200
 Connection ~ 6525 1200
 Wire Wire Line
 	6525 1200 6525 1350
 Wire Wire Line
-	6225 2150 6325 2150
-Wire Wire Line
-	6325 2150 6325 1550
-Wire Wire Line
 	6325 1550 6775 1550
-Wire Wire Line
-	6225 2650 6425 2650
-Wire Wire Line
-	6425 2650 6425 1850
 Wire Wire Line
 	6425 1850 6775 1850
 Wire Wire Line
-	6225 2750 6525 2750
-Wire Wire Line
-	6525 2750 6525 1950
-Wire Wire Line
-	6525 1950 6775 1950
-Wire Wire Line
 	6325 1550 6325 1500
-Connection ~ 6325 1550
 Wire Wire Line
 	8175 1550 8375 1550
 Wire Wire Line
@@ -1219,11 +1191,6 @@ Wire Notes Line
 	3300 5325 3300 7125
 NoConn ~ 7575 2950
 NoConn ~ 7475 2950
-NoConn ~ 6225 2350
-NoConn ~ 6225 2550
-NoConn ~ 5625 2950
-NoConn ~ 5225 2150
-NoConn ~ 5225 2350
 $Comp
 L Device:LED D1
 U 1 1 5F85EF33
@@ -1259,4 +1226,33 @@ Wire Wire Line
 Connection ~ 725  1025
 Wire Wire Line
 	725  1025 725  1325
+Connection ~ 6325 1550
+$Comp
+L Connector:USB_A J4
+U 1 1 5F8DC6D3
+P 5850 2450
+F 0 "J4" H 5907 2917 50  0000 C CNN
+F 1 "USB_A" H 5907 2826 50  0000 C CNN
+F 2 "" H 6000 2400 50  0001 C CNN
+F 3 " ~" H 6000 2400 50  0001 C CNN
+	1    5850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2850 5850 3000
+Wire Wire Line
+	6150 2250 6325 2250
+Wire Wire Line
+	6325 1550 6325 2250
+Wire Wire Line
+	6425 2550 6150 2550
+Wire Wire Line
+	6425 1850 6425 2550
+Wire Wire Line
+	6500 1950 6500 2450
+Wire Wire Line
+	6500 2450 6150 2450
+Wire Wire Line
+	6500 1950 6775 1950
+NoConn ~ 5750 2850
 $EndSCHEMATC
