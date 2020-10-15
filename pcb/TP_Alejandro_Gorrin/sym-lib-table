@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name TP_Alejandro_Gorrin-rescue)(type Legacy)(uri ${KIPRJMOD}/TP_Alejandro_Gorrin-rescue.lib)(options "")(descr ""))
+)
