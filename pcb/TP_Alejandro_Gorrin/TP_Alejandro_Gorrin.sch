@@ -764,7 +764,7 @@ Wire Wire Line
 Text Label 775  3375 0    47   ~ 0
 RESET
 Text Label 3775 5775 0    47   ~ 0
-IO13_A1
+IO13_A12
 Wire Wire Line
 	2975 1175 2975 1325
 Wire Wire Line
