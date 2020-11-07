@@ -507,8 +507,6 @@ Wire Wire Line
 	3775 6675 3775 6875
 Wire Wire Line
 	3775 6225 3775 6375
-Wire Wire Line
-	3775 5925 3775 5850
 $Comp
 L Transistor_FET:BS250 Q3
 U 1 1 5F85A103
@@ -555,7 +553,7 @@ F 3 "~" H 7900 4900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6250 4800 5900 4800
-Text Label 5900 4800 0    45   ~ 0
+Text Label 7400 4700 0    45   ~ 0
 IO13_A12
 Text Label 1750 5275 1    47   ~ 0
 IO13_A12
@@ -637,9 +635,7 @@ F 3 "" H 1525 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 4700 5700 4700
-Wire Wire Line
-	5700 4700 5700 4600
+	5700 4600 5700 4500
 Wire Wire Line
 	6250 4500 5900 4500
 Wire Wire Line
@@ -647,12 +643,12 @@ Wire Wire Line
 $Comp
 L power:VBUS #PWR0122
 U 1 1 5F8AB477
-P 5700 4600
-F 0 "#PWR0122" H 5700 4450 50  0001 C CNN
-F 1 "VBUS" H 5715 4773 50  0000 C CNN
-F 2 "" H 5700 4600 50  0001 C CNN
-F 3 "" H 5700 4600 50  0001 C CNN
-	1    5700 4600
+P 5700 4500
+F 0 "#PWR0122" H 5700 4350 50  0001 C CNN
+F 1 "VBUS" H 5700 4650 50  0000 C CNN
+F 2 "" H 5700 4500 50  0001 C CNN
+F 3 "" H 5700 4500 50  0001 C CNN
+	1    5700 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -721,34 +717,26 @@ F 3 "" H 4400 1025 50  0001 C CNN
 	1    4400 1025
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7700 5400 7000 5400
-Wire Wire Line
-	7000 5400 7000 5500
 $Comp
 L power:GNDD #PWR0129
 U 1 1 5F8BAE19
-P 7000 5500
-F 0 "#PWR0129" H 7000 5250 50  0001 C CNN
-F 1 "GNDD" H 7004 5345 50  0000 C CNN
-F 2 "" H 7000 5500 50  0001 C CNN
-F 3 "" H 7000 5500 50  0001 C CNN
-	1    7000 5500
+P 7125 4500
+F 0 "#PWR0129" H 7125 4250 50  0001 C CNN
+F 1 "GNDD" H 7129 4345 50  0000 C CNN
+F 2 "" H 7125 4500 50  0001 C CNN
+F 3 "" H 7125 4500 50  0001 C CNN
+	1    7125 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7700 5600 7350 5600
-Wire Wire Line
-	7350 5600 7350 5550
 $Comp
 L power:+3.3V #PWR0130
 U 1 1 5F8BF3BE
-P 7350 5550
-F 0 "#PWR0130" H 7350 5400 50  0001 C CNN
-F 1 "+3.3V" H 7500 5600 50  0000 C CNN
-F 2 "" H 7350 5550 50  0001 C CNN
-F 3 "" H 7350 5550 50  0001 C CNN
-	1    7350 5550
+P 7300 4150
+F 0 "#PWR0130" H 7300 4000 50  0001 C CNN
+F 1 "+3.3V" H 7450 4200 50  0000 C CNN
+F 2 "" H 7300 4150 50  0001 C CNN
+F 3 "" H 7300 4150 50  0001 C CNN
+	1    7300 4150
 	1    0    0    -1  
 $EndComp
 Text Label 4625 3900 2    47   ~ 0
@@ -815,15 +803,9 @@ Wire Wire Line
 Wire Wire Line
 	6250 5600 5900 5600
 Wire Wire Line
-	7700 4200 7400 4200
-Wire Wire Line
 	7700 4300 7400 4300
 Wire Wire Line
-	7700 4400 7400 4400
-Wire Wire Line
 	7700 4500 7400 4500
-Wire Wire Line
-	7700 4600 7400 4600
 Wire Wire Line
 	7700 4700 7400 4700
 Wire Wire Line
@@ -844,29 +826,27 @@ Text Label 775  3475 0    47   ~ 0
 A4_IO36
 Text Label 775  3575 0    47   ~ 0
 A3_I39
-Text Label 7400 4900 0    47   ~ 0
+Text Label 5900 5600 0    47   ~ 0
 A4_IO36
-Text Label 7400 5000 0    47   ~ 0
+Text Label 5900 5500 0    47   ~ 0
 A3_I39
 Text Label 3150 3925 0    47   ~ 0
 SCK
-Text Label 7400 4700 0    47   ~ 0
+Text Label 7400 5200 0    47   ~ 0
 SCK
-Wire Wire Line
-	6250 4600 5900 4600
-Text Label 5900 4900 0    47   ~ 0
+Text Label 5900 4700 0    47   ~ 0
 IO12_A11
 Text Label 775  4475 0    47   ~ 0
 IO12_A11
-Text Label 5900 5000 0    47   ~ 0
+Text Label 5900 4900 0    47   ~ 0
 IO27_A10
 Text Label 775  4275 0    47   ~ 0
 IO27_A10
-Text Label 5900 5100 0    47   ~ 0
+Text Label 5900 5200 0    47   ~ 0
 IO33_A9
 Text Label 775  3975 0    47   ~ 0
 IO33_A9
-Text Label 5900 5200 0    47   ~ 0
+Text Label 7400 4800 0    47   ~ 0
 IO15_A8
 Text Label 2450 5275 1    47   ~ 0
 IO15_A8
@@ -874,55 +854,55 @@ Text Label 5900 5300 0    47   ~ 0
 IO32_A7
 Text Label 775  3875 0    47   ~ 0
 IO32_A7
-Text Label 5900 5400 0    47   ~ 0
+Text Label 5900 4800 0    47   ~ 0
 IO14_A6
 Text Label 775  4375 0    47   ~ 0
 IO14_A6
-Text Label 5900 5500 0    47   ~ 0
+Text Label 7400 5600 0    47   ~ 0
 SCI
 Text Label 3150 3225 0    47   ~ 0
 SCI
 Text Label 3150 3125 0    47   ~ 0
 SDA
-Text Label 5900 5600 0    47   ~ 0
+Text Label 7400 5700 0    47   ~ 0
 SDA
-Text Label 7400 4200 0    47   ~ 0
+Text Label 7400 5500 0    47   ~ 0
 IO21
 Text Label 3150 3525 0    47   ~ 0
 IO21
-Text Label 7400 4300 0    47   ~ 0
+Text Label 7400 5100 0    47   ~ 0
 IO17
-Text Label 7400 4400 0    47   ~ 0
+Text Label 7400 5000 0    47   ~ 0
 IO16
 Text Label 3150 4025 0    47   ~ 0
 IO17
 Text Label 3150 4125 0    47   ~ 0
 IO16
-Text Label 7400 4500 0    47   ~ 0
+Text Label 7400 5400 0    47   ~ 0
 MISO
 Text Label 3150 3725 0    47   ~ 0
 MISO
-Text Label 7400 4600 0    47   ~ 0
+Text Label 7400 5300 0    47   ~ 0
 MISI
 Text Label 3150 3825 0    47   ~ 0
 MISI
-Text Label 7400 4800 0    47   ~ 0
+Text Label 7400 4900 0    47   ~ 0
 A5_IO4
 Text Label 3150 4225 0    47   ~ 0
 A5_IO4
-Text Label 7400 5100 0    47   ~ 0
+Text Label 5900 5400 0    47   ~ 0
 A2_I34
 Text Label 775  3675 0    47   ~ 0
 A2_I34
-Text Label 7400 5200 0    47   ~ 0
+Text Label 5900 5100 0    47   ~ 0
 A1_DAC1
 Text Label 775  4075 0    47   ~ 0
 A1_DAC1
-Text Label 7400 5300 0    47   ~ 0
+Text Label 5900 5000 0    47   ~ 0
 A0_DAC2
 Text Label 775  4175 0    47   ~ 0
 A0_DAC2
-Text Label 7400 5700 0    47   ~ 0
+Text Label 7400 4300 0    47   ~ 0
 RESET
 Text Label 4475 3100 0    47   ~ 0
 A13_I35
@@ -942,7 +922,7 @@ Text Notes 4475 725  0    55   ~ 11
 RESET
 Text Notes 2225 725  0    55   ~ 11
 POWER_AND_FILTERING
-Text Label 5900 4600 0    47   ~ 0
+Text Label 7400 4500 0    47   ~ 0
 EN
 NoConn ~ 7675 1050
 NoConn ~ 8175 2250
@@ -954,7 +934,6 @@ NoConn ~ 6775 2450
 NoConn ~ 6775 2350
 NoConn ~ 6775 2250
 NoConn ~ 6775 2150
-NoConn ~ 7700 5500
 $Comp
 L Switch:SW_DPST_x2 SW1
 U 1 1 5FACBEA5
@@ -1025,7 +1004,7 @@ $EndComp
 Wire Wire Line
 	1875 1325 1750 1325
 Connection ~ 1625 1325
-NoConn ~ 6250 4600
+NoConn ~ 7700 4600
 Wire Wire Line
 	725  725  725  1025
 Wire Wire Line
@@ -1041,8 +1020,6 @@ Wire Wire Line
 Connection ~ 6325 1550
 Wire Wire Line
 	6150 2250 6325 2250
-Wire Wire Line
-	6325 1550 6325 1875
 Wire Wire Line
 	6425 2550 6150 2550
 Wire Wire Line
@@ -1065,38 +1042,6 @@ F 3 "~" H 3475 1575 50  0001 C CNN
 	1    3475 1575
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 5F8B58E7
-P 6225 1875
-F 0 "#FLG0103" H 6225 1950 50  0001 C CNN
-F 1 "PWR_FLAG" V 6225 2025 50  0000 L CNN
-F 2 "" H 6225 1875 50  0001 C CNN
-F 3 "~" H 6225 1875 50  0001 C CNN
-	1    6225 1875
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6225 1875 6325 1875
-Connection ~ 6325 1875
-Wire Wire Line
-	6325 1875 6325 2250
-$Comp
-L power:PWR_FLAG #FLG0105
-U 1 1 5F8C7B1A
-P 3850 5850
-F 0 "#FLG0105" H 3850 5925 50  0001 C CNN
-F 1 "PWR_FLAG" V 3950 5900 50  0000 L CNN
-F 2 "" H 3850 5850 50  0001 C CNN
-F 3 "~" H 3850 5850 50  0001 C CNN
-	1    3850 5850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3850 5850 3775 5850
-Connection ~ 3775 5850
-Wire Wire Line
-	3775 5850 3775 5775
 Wire Wire Line
 	3225 1675 3225 2000
 Wire Wire Line
@@ -1211,8 +1156,6 @@ Wire Wire Line
 	900  4975 900  5050
 NoConn ~ 2550 4925
 Wire Wire Line
-	5850 2850 5850 3000
-Wire Wire Line
 	4400 1925 4400 1950
 Wire Wire Line
 	4400 1425 4400 1500
@@ -1289,4 +1232,29 @@ F 3 "~" H 6000 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 6150 2650
+Wire Wire Line
+	5700 4600 6250 4600
+Wire Wire Line
+	6250 4700 5900 4700
+Wire Wire Line
+	7300 4200 7300 4150
+Wire Wire Line
+	7300 4200 7700 4200
+Wire Wire Line
+	7700 5400 7400 5400
+Wire Wire Line
+	7700 5500 7400 5500
+Wire Wire Line
+	7700 5600 7400 5600
+Wire Wire Line
+	7125 4400 7125 4500
+Wire Wire Line
+	7125 4400 7700 4400
+NoConn ~ 7700 4500
+Wire Wire Line
+	3775 5775 3775 5925
+Wire Wire Line
+	5850 2850 5850 3000
+Wire Wire Line
+	6325 1550 6325 2250
 $EndSCHEMATC
