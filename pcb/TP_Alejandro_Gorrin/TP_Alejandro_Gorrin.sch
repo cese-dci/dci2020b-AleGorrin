@@ -433,17 +433,6 @@ Wire Wire Line
 Connection ~ 5925 1200
 Wire Wire Line
 	5925 1200 5925 1250
-$Comp
-L power:GNDD #PWR0112
-U 1 1 5F8A1CC4
-P 5850 3000
-F 0 "#PWR0112" H 5850 2750 50  0001 C CNN
-F 1 "GNDD" H 5854 2845 50  0000 C CNN
-F 2 "" H 5850 3000 50  0001 C CNN
-F 3 "" H 5850 3000 50  0001 C CNN
-	1    5850 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5925 1200 6525 1200
 Connection ~ 6525 1200
@@ -1254,7 +1243,50 @@ NoConn ~ 7700 4500
 Wire Wire Line
 	3775 5775 3775 5925
 Wire Wire Line
-	5850 2850 5850 3000
-Wire Wire Line
 	6325 1550 6325 2250
+NoConn ~ 5850 2850
+$Comp
+L Mechanical:MountingHole MK101
+U 1 1 5FB548C1
+P 6325 3500
+F 0 "MK101" H 6425 3546 50  0000 L CNN
+F 1 "MountingHole" H 6425 3455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 6325 3500 50  0001 C CNN
+F 3 "~" H 6325 3500 50  0001 C CNN
+	1    6325 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MK102
+U 1 1 5FB54F64
+P 6325 3750
+F 0 "MK102" H 6425 3796 50  0000 L CNN
+F 1 "MountingHole" H 6425 3705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 6325 3750 50  0001 C CNN
+F 3 "~" H 6325 3750 50  0001 C CNN
+	1    6325 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MK103
+U 1 1 5FB55716
+P 7250 3500
+F 0 "MK103" H 7350 3546 50  0000 L CNN
+F 1 "MountingHole" H 7350 3455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7250 3500 50  0001 C CNN
+F 3 "~" H 7250 3500 50  0001 C CNN
+	1    7250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MK104
+U 1 1 5FB5612A
+P 7250 3750
+F 0 "MK104" H 7350 3796 50  0000 L CNN
+F 1 "MountingHole" H 7350 3705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7250 3750 50  0001 C CNN
+F 3 "~" H 7250 3750 50  0001 C CNN
+	1    7250 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
