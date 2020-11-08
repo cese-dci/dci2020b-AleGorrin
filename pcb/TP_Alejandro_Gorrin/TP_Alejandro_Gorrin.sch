@@ -1244,7 +1244,6 @@ Wire Wire Line
 	3775 5775 3775 5925
 Wire Wire Line
 	6325 1550 6325 2250
-NoConn ~ 5850 2850
 $Comp
 L Mechanical:MountingHole MK101
 U 1 1 5FB548C1
@@ -1289,4 +1288,17 @@ F 3 "~" H 7250 3750 50  0001 C CNN
 	1    7250 3750
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5FB6B73A
+P 5850 3050
+F 0 "#PWR?" H 5850 2800 50  0001 C CNN
+F 1 "GNDD" H 5854 2895 50  0000 C CNN
+F 2 "" H 5850 3050 50  0001 C CNN
+F 3 "" H 5850 3050 50  0001 C CNN
+	1    5850 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3050 5850 2850
 $EndSCHEMATC
