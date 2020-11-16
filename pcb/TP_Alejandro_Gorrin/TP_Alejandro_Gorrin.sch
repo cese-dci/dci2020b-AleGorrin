@@ -497,17 +497,6 @@ Wire Wire Line
 Wire Wire Line
 	3775 6225 3775 6375
 $Comp
-L Transistor_FET:BS250 Q3
-U 1 1 5F85A103
-P 1275 1025
-F 0 "Q3" H 1479 1071 50  0000 L CNN
-F 1 "BS250" H 1479 980 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1475 950 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 1275 1025 50  0001 L CNN
-	1    1275 1025
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDD #PWR0114
 U 1 1 5F868887
 P 900 5050
@@ -1267,38 +1256,15 @@ F 3 "~" H 6325 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole MK103
-U 1 1 5FB55716
-P 7250 3500
-F 0 "MK103" H 7350 3546 50  0000 L CNN
-F 1 "MountingHole" H 7350 3455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7250 3500 50  0001 C CNN
-F 3 "~" H 7250 3500 50  0001 C CNN
-	1    7250 3500
-	1    0    0    -1  
+L Transistor_FET:DMG3414U Q3
+U 1 1 5FB22527
+P 1275 1025
+F 0 "Q3" H 1479 979 50  0000 L CNN
+F 1 "DMG3414U" H 1479 1070 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1475 950 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds31739.pdf" H 1275 1025 50  0001 L CNN
+	1    1275 1025
+	1    0    0    1   
 $EndComp
-$Comp
-L Mechanical:MountingHole MK104
-U 1 1 5FB5612A
-P 7250 3750
-F 0 "MK104" H 7350 3796 50  0000 L CNN
-F 1 "MountingHole" H 7350 3705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7250 3750 50  0001 C CNN
-F 3 "~" H 7250 3750 50  0001 C CNN
-	1    7250 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR?
-U 1 1 5FB6B73A
-P 5850 3050
-F 0 "#PWR?" H 5850 2800 50  0001 C CNN
-F 1 "GNDD" H 5854 2895 50  0000 C CNN
-F 2 "" H 5850 3050 50  0001 C CNN
-F 3 "" H 5850 3050 50  0001 C CNN
-	1    5850 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 3050 5850 2850
+NoConn ~ 5850 2850
 $EndSCHEMATC
